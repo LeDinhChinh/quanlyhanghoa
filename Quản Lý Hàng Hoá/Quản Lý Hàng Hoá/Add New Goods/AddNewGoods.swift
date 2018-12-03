@@ -15,7 +15,7 @@ class AddNewGoods: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
         btnAdd.tintColor = UIColor.red
-        btnAdd.setBackgroundImage(UIImage(named: "linear"), for: <#T##UIControl.State#>, barMetrics: <#T##UIBarMetrics#>)
+        btnAdd.setBackgroundImage(UIImage(named: "linear"), for: UIControl.State.normal, barMetrics: UIBarMetrics.default)
         // Do any additional setup after loading the view.
     }
     
