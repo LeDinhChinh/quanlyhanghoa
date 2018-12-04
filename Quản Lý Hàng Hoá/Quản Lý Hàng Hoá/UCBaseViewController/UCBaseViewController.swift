@@ -40,6 +40,7 @@ class UCBaseViewController: UIViewController,UIGestureRecognizerDelegate {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        print("viewWillAppear listGoods")
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         if isSetupNavigation{
             if self.isShowBackButton {
@@ -100,6 +101,7 @@ class UCBaseViewController: UIViewController,UIGestureRecognizerDelegate {
         button.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
     }
+    
     @objc func onPressRightNavButton () {
     }
     

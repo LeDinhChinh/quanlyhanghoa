@@ -13,8 +13,6 @@ class ListGoods: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    
 }
 
 extension ListGoods: UIImagePickerControllerDelegate {

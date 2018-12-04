@@ -13,10 +13,13 @@ class AddNewGoods: UCBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
-        title = "ms®n 1"
-        self.isShowBackButton = true
+        title = "Add new a goods"
+//        self.isShowNoti = true
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewwillappear addnewgoods")
+    }
    
 }
