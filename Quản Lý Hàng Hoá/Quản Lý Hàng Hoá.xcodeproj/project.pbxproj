@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846F866F21B6271A0023FB25 /* UCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F866E21B6271A0023FB25 /* UCBaseViewController.swift */; };
 		84BCF43D21B564BA003B52DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BCF43C21B564BA003B52DE /* AppDelegate.swift */; };
 		84BCF43F21B564BA003B52DE /* ListGoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BCF43E21B564BA003B52DE /* ListGoods.swift */; };
 		84BCF44221B564BA003B52DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BCF44021B564BA003B52DE /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		846F866E21B6271A0023FB25 /* UCBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCBaseViewController.swift; sourceTree = "<group>"; };
 		84BCF43921B564BA003B52DE /* Quản Lý Hàng Hoá.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quản Lý Hàng Hoá.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BCF43C21B564BA003B52DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BCF43E21B564BA003B52DE /* ListGoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGoods.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846F867021B6277B0023FB25 /* UCBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				846F866E21B6271A0023FB25 /* UCBaseViewController.swift */,
+			);
+			path = UCBaseViewController;
+			sourceTree = "<group>";
+		};
 		84BCF43021B564BA003B52DE = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +109,13 @@
 		84BCF43B21B564BA003B52DE /* Quản Lý Hàng Hoá */ = {
 			isa = PBXGroup;
 			children = (
-				84BCF43C21B564BA003B52DE /* AppDelegate.swift */,
 				84BCF44321B564BB003B52DE /* Assets.xcassets */,
+				84BCF43C21B564BA003B52DE /* AppDelegate.swift */,
 				84BCF46A21B56AB6003B52DE /* List Goods */,
 				84BCF46B21B56DAA003B52DE /* Add New Goods */,
-				84BCF44021B564BA003B52DE /* Main.storyboard */,
+				846F867021B6277B0023FB25 /* UCBaseViewController */,
 				84BCF44521B564BB003B52DE /* LaunchScreen.storyboard */,
+				84BCF44021B564BA003B52DE /* Main.storyboard */,
 				84BCF44821B564BB003B52DE /* Info.plist */,
 			);
 			path = "Quản Lý Hàng Hoá";
@@ -278,6 +289,7 @@
 				84BCF46D21B56DD0003B52DE /* AddNewGoods.swift in Sources */,
 				84BCF43F21B564BA003B52DE /* ListGoods.swift in Sources */,
 				84BCF43D21B564BA003B52DE /* AppDelegate.swift in Sources */,
+				846F866F21B6271A0023FB25 /* UCBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

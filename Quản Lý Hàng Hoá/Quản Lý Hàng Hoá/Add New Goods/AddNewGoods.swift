@@ -8,11 +8,15 @@
 
 import UIKit
 
-class AddNewGoods: UIViewController {
+class AddNewGoods: UCBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
+        title = "ms®n 1"
+        self.isShowBackButton = true
         // Do any additional setup after loading the view.
     }
+    
+   
 }
