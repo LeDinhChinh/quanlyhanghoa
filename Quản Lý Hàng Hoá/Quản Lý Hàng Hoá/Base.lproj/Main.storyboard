@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EMT-zF-iIA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,9 +16,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fj2-xZ-Uj1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="List Goods" id="ote-je-fzt">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jwe-Oc-bZG">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fj2-xZ-Uj1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EE6-hu-Rlh"/>
+                            <constraint firstItem="Fj2-xZ-Uj1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VDA-zt-4g0"/>
+                            <constraint firstItem="Fj2-xZ-Uj1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="n1G-oC-sVZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="nextViewAddNewGoods" destination="8bC-Xf-vdC" id="uV4-hU-ca5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,34 +51,13 @@
                     <view key="view" contentMode="scaleToFill" id="vGa-hw-a94">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdx-mY-Y2a">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bLg-05-gJG"/>
-                                    <barButtonItem title="Item" systemItem="add" id="0Jh-MA-7rT">
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="tuk-0S-Erj"/>
-                                </items>
-                            </toolbar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="S1l-fh-Fgk" firstAttribute="bottom" secondItem="sdx-mY-Y2a" secondAttribute="bottom" id="Agq-Wg-Nfc"/>
-                            <constraint firstItem="S1l-fh-Fgk" firstAttribute="trailing" secondItem="sdx-mY-Y2a" secondAttribute="trailing" id="GAX-3V-xLd"/>
-                            <constraint firstItem="sdx-mY-Y2a" firstAttribute="leading" secondItem="vGa-hw-a94" secondAttribute="leading" id="Hy0-ys-7Nc"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="S1l-fh-Fgk"/>
                     </view>
-                    <connections>
-                        <outlet property="btnAdd" destination="0Jh-MA-7rT" id="Aop-HF-pm2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8tU-qM-ACE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="132"/>
+            <point key="canvasLocation" x="737" y="132"/>
         </scene>
     </scenes>
 </document>
